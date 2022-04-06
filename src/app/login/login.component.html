@@ -1,0 +1,16 @@
+<div class="container mt-3 col-md-3 col-offset-3">
+  <h2>Identifiez vous</h2>
+  <span *ngIf="message.length != 0" class="text-danger">{{message}}</span>
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div class="mb-3 mt-3">
+      <label for="login">Email:</label>
+      <input type="text" formControlName="login" class="form-control" id="login" placeholder="Enter email" name="login">
+    </div>
+    <div class="mb-3">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" formControlName="password" id="pwd" placeholder="Enter password"
+        name="pwd">
+    </div>
+    <button type="submit" [disabled]="loginForm.invalid" class="btn btn-primary">Connexion</button>
+  </form>
+</div>
