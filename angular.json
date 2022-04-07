@@ -31,7 +31,9 @@
               "node_modules/ngx-spinner/animations/ball-scale-multiple.css",
               "node_modules/ngx-spinner/animations/timer.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/keycloak-js/dist/keycloak.min.js"
+            ]
           },
           "configurations": {
             "production": {
